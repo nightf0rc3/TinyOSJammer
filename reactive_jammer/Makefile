@@ -1,0 +1,7 @@
+COMPONENT = JammerAppC
+PFLAGS = -DCC2420_DEF_CHANNEL=24
+PFLAGS += -DCC2420_DEF_RFPOWER=31
+
+TINYOS_ROOT_DIR?=../../..
+CFLAGS += -I$(TINYOS_ROOT_DIR)/tos/lib/printf
+include $(TINYOS_ROOT_DIR)/Makefile.include
